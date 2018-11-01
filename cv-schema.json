@@ -1,0 +1,50 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "TODO: add id",
+    "title": "CV content",
+    "description": "TODO: Add description, TODO: Add date formats",
+    "type": "object",
+    "properties": {
+        "fullName": {
+            "description": "The Full Name of a person",
+            "type": "string"
+        },
+        "companyProjects" : {
+            "description": "Projects worked as developer for the salary",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "companyName" : {
+                        "type": "string"
+                    },
+                    "projectName" : {
+                        "type": "string"
+                    },
+                    "endDate" : {
+                        "type" : "string"
+                    },
+                    "startDate": {
+                        "description": "Assignment date to the project",
+                        "type": "string"
+                    },
+                    "role": {
+                        "type": "string"
+                    },
+                    "roleDescription": {
+                        "type": "string"
+                    },
+                    "technologies": {
+                        "type":"array",
+                        "items": {
+                            "type":"string"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "required": [
+        "fullName"
+    ]
+}
